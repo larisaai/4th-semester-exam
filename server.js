@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const fs = require("fs");
 require("dotenv").config();
 
 const app = express();
@@ -10,6 +11,37 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   res.status(200).send("OK");
+});
+
+app.get("/data", (req, res) => {
+  fs.readFile("database/reviews.json", "utf8", (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.status(200).json(data);
+    }
+  });
+});
+
+app.post("/reviews", (req, res) => {
+  fs.readFile("database/reviews.json", "utf8", (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      data = JSON.parse(data); //now it is an object
+
+      data.push(req.body);
+      const json = JSON.stringify(data); //convert it back to json
+
+      fs.writeFile("database/reviews.json", json, "utf8", err => {
+        if (err) {
+          console.log(err);
+        }
+      });
+    }
+  });
+
+  res.redirect("/contact.html");
 });
 
 app.post("/guestData", (req, res) => {
@@ -52,7 +84,7 @@ app.post("/guestData", (req, res) => {
     }
   });
 
-  res.redirect("/");
+  res.redirect("/booking.html");
 });
 
 const PORT = 3333;
