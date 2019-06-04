@@ -46,7 +46,7 @@
   height: 5rem;
   font-size: 1.3rem;
   font-family: var(--font-regular);
-  background: #243e4b;
+  background: #101f3e;
   z-index: 1;
 }
 .menu-item {
@@ -55,6 +55,10 @@
   height: 10rem;
   display: flex;
   align-items: center;
+}
+.menu-item a {
+  color: white;
+  font-family: "Oswald Light";
 }
 .menu-item-with-arrow {
   position: relative;
