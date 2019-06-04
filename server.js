@@ -87,5 +87,5 @@ app.post("/guestData", (req, res) => {
   res.redirect("/booking.html");
 });
 
-const PORT = 3333;
+const PORT = process.env.PORT || 3333;
 app.listen(PORT, console.log(`Server running on port 3333`));
