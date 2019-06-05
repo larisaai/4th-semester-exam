@@ -1,3 +1,7 @@
+@import "menu.css";
+@import "forms.css";
+@import "slideshow.css";
+@import "table.css";
 body {
   margin: 0;
 }
