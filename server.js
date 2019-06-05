@@ -97,5 +97,36 @@ app.post("/guestData", (req, res) => {
   res.redirect("/booking.html");
 });
 
+app.post("/message", (req, res) => {
+  const { name, email, message } = req.body;
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.GMAIL,
+      pass: process.env.PASS
+    }
+  });
+
+  const mailOptions = {
+    from: email,
+    to: ["ailisoaielarisa@yahoo.com"],
+    subject: "New Message",
+    html: `
+    <h1 style="color: red;font-size: 2rem;">Name: ${name}</h1>
+    <h2>Email: ${email}</h2>
+    Message: ${message}`
+  };
+
+  transporter.sendMail(mailOptions, function(error, info) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Email sent: " + info.response);
+    }
+  });
+
+  res.redirect("/contact.html");
+});
+
 const PORT = process.env.PORT || 3333;
 app.listen(PORT, console.log(`Server running on port 3333`));
