@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20rem;
+  width: 100vw;
+  background-color: #101f3e;
+}
+.footer h3 {
+  font-size: 1.7rem;
+}
+footer p {
+  font-size: 1.5rem;
+}
+.so-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer img {
+  width: 3rem;
+  height: 3rem;
+}
+.so-me button {
+  color: #101f3e;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+}
+.contact div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
