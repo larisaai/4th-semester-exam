@@ -5,3 +5,67 @@
 body {
   margin: 0;
 }
+.box-wide {
+  width: 90%;
+  margin: auto;
+}
+.hero-container {
+  position: relative;
+}
+.hero-title {
+  position: absolute;
+  top: 20rem;
+  left: 4rem;
+}
+.overlay {
+  position: absolute;
+  background-color: #101f3e;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40rem;
+}
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+}
+.hero-title h1 {
+  font-size: 4rem;
+  width: 20rem;
+  color: white;
+}
+.divider {
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #b2a289;
+  margin-bottom: 2.5rem;
+}
+.right-text {
+  width: 25rem;
+  position: absolute;
+  right: 4rem;
+  top: 20rem;
+}
+.right-text h2 {
+  border-top: 0.2rem solid #b2a289;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+}
+.buttons-contaner {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.buttons-contaner button {
+  float: initial;
+  color: #101f3e;
+  background-color: #b2a289;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
