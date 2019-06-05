@@ -2,6 +2,8 @@
 @import "forms.css";
 @import "slideshow.css";
 @import "table.css";
+@import "who-is-us.css";
+
 body {
   margin: 0;
 }
@@ -25,7 +27,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 40rem;
+  height: 80vh;
 }
 .logo {
   position: absolute;

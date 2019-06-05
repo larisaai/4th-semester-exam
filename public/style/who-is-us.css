@@ -1,0 +1,27 @@
+.introduction {
+  position: relative;
+}
+.introduction-hero-container {
+  position: absolute;
+  z-index: -1;
+}
+.introduction-hero {
+  width: 100vw;
+  height: 35rem;
+  object-fit: cover;
+  max-width: 100%;
+}
+.introduction-hero-container .overlay {
+  height: 35rem;
+}
+.introduction-card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.introduction-card {
+  height: 25rem;
+  width: 15rem;
+  background: rgba(255, 255, 255, 0.7);
+}

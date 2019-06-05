@@ -1,5 +1,28 @@
-const reviewsDiv = document.querySelector(".reviews");
+const whoIsUs = document.querySelector(".introduction-card-container");
 
+fetch("/who")
+  .then(res => res.json())
+  .then(data => {
+    data = JSON.parse(data);
+    data.forEach(item => {
+      const card = document.createElement("div");
+      card.className = "introduction-card";
+      const img = document.createElement("img");
+      const p = document.createElement("p");
+      const button = document.createElement("button");
+      img.src = item.icon;
+      p.innerHTML = item.title;
+      button.innerHTML = "Read more";
+
+      card.appendChild(img);
+      card.appendChild(p);
+      card.appendChild(button);
+      whoIsUs.appendChild(card);
+    });
+  })
+  .catch(err => console.log(err));
+
+const reviewsDiv = document.querySelector(".reviews");
 fetch("/data")
   .then(res => res.json())
   .then(data => {
