@@ -54,18 +54,20 @@ fetch("/who")
   })
   .catch(err => console.log(err));
 
-const reviewsDiv = document.querySelector(".reviews");
+const reviewsContainer = document.querySelector(".reviews");
 fetch("/data")
   .then(res => res.json())
   .then(data => {
     data = JSON.parse(data);
     data.forEach(item => {
-      const h1 = document.createElement("h1");
+      const h3 = document.createElement("h3");
       const p = document.createElement("p");
-      h1.innerHTML = item.name;
+      const reviewDiv = document.createElement("div");
+      h3.innerHTML = item.name;
       p.innerHTML = item.guestReview;
-      reviewsDiv.appendChild(h1);
-      reviewsDiv.appendChild(p);
+      reviewDiv.appendChild(h3);
+      reviewDiv.appendChild(p);
+      reviewsContainer.appendChild(reviewDiv);
     });
   })
   .catch(err => console.log(err));
