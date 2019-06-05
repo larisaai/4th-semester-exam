@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/forms.css" />
     <title>Contact Us</title>
   </head>
   <body>
@@ -15,5 +16,44 @@
         <button type="submit">Submit</button>
       </form>
     </div>
+
+    <div class="message">
+      <form action="/message" method="POST">
+        <!--  General -->
+        <div class="form-group">
+          <h2 class="heading">Leave us a message</h2>
+          <div class="controls">
+            <input type="text" id="name" class="floatLabel" name="name" />
+            <label for="name">Name</label>
+          </div>
+          <div class="controls">
+            <input type="text" id="email" class="floatLabel" name="email" />
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <!--  Details -->
+        <div class="form-group">
+          <div class="grid">
+            <p class="info-text">
+              Your message
+            </p>
+            <br />
+            <div class="controls">
+              <textarea
+                name="message"
+                class="floatLabel"
+                id="message"
+              ></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" value="Submit" class="col-1-4 form-button">
+              Submit
+            </button>
+          </div>
+        </div>
+        <!-- /.form-group -->
+      </form>
+    </div>
+    <script src="js/booking.js"></script>
   </body>
 </html>
