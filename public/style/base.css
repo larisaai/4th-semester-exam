@@ -99,6 +99,7 @@ button {
 .overview-item:nth-child(odd) {
   background-color: rgba(16, 31, 62, 0.1);
 }
+
 .overview-item img {
   width: 45%;
   object-fit: contain;
@@ -118,6 +119,7 @@ button {
 .overview-item li {
   list-style: none;
   font-size: 1.2rem;
+  margin-left: 1.2rem;
 }
 .overview-item p {
   font-size: 1.2rem;
@@ -132,6 +134,7 @@ button {
 }
 .overview-item .divider {
   margin-bottom: 0.5rem;
+  height: 0.2rem;
 }
 .overview-item h3 {
   margin-bottom: 1.5rem;

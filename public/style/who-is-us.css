@@ -1,6 +1,7 @@
 .introduction {
   position: relative;
   padding-top: 4rem;
+  margin-bottom: 6rem;
 }
 
 .introduction-hero-container {
@@ -43,7 +44,7 @@
   font-size: 1.7rem;
   margin-top: 3rem;
 }
-.introduction-card button {
+.read-more-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,22 +52,43 @@
   background-color: transparent;
   color: black;
   float: initial;
-  margin: 5rem auto 3rem auto;
+  margin: 4rem auto 1rem auto;
   padding-right: 1rem;
+  position: relative;
 }
 
 .read-more-details {
   display: none;
   position: absolute;
   background: rgba(255, 255, 255, 0.9);
-  top: 105%;
+  top: 104%;
   width: 85%;
   padding: 2rem;
+  left: 5rem;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.2rem solid #b2a289;
 }
 .active .read-more-details {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.active .read-more-btn {
+  text-decoration: underline;
+}
+.active .read-more-btn::after {
+  content: "";
+  position: absolute;
+  left: 42%;
+  top: 140%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid rgba(255, 255, 255, 0.9);
+  clear: both;
+}
+.read-more-btn:hover {
+  background-color: transparent;
 }
 .read-more-details div {
   font-size: 1.2rem;
@@ -88,6 +110,7 @@
   border-bottom: 5px solid #2f2f2f;
   transform: rotate(180deg);
   pointer-events: none;
+  margin-left: 0.3rem;
 }
 .active .read-more-arrow {
   transform: rotate(0deg);
