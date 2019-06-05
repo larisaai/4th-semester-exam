@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   justify-content: flex-end;
-  background-color: #101f3e;
+  /* background-color: #101f3e; */
   align-items: center;
   height: 4rem;
   width: 100%;

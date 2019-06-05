@@ -7,13 +7,22 @@
 body {
   margin: 0;
 }
+header {
+  background-color: rgba(16, 31, 62, 0.9);
+}
 h2 {
   color: white;
   font-size: 2rem;
 }
+h3 {
+  font-size: 1.6rem;
+}
 .box-wide {
   width: 90%;
   margin: auto;
+}
+.black {
+  color: black;
 }
 .hero-container {
   position: relative;
@@ -44,10 +53,10 @@ h2 {
   color: white;
 }
 .divider {
-  width: 5rem;
+  width: 5rem !important;
   height: 0.3rem;
   background-color: #b2a289;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 .right-text {
   width: 25rem;
@@ -75,3 +84,19 @@ h2 {
   padding: 1rem;
   font-size: 1.5rem;
 }
+
+/* overview gallery */
+
+.overview-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.overview-item img {
+  width: 45%;
+  object-fit: contain;
+}
+.overview-item div {
+  width: 45%;
+}
+/* .overview-item li { list-style: ;} */

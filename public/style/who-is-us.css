@@ -1,10 +1,12 @@
 .introduction {
   position: relative;
+  padding-top: 4rem;
 }
 
 .introduction-hero-container {
   position: absolute;
   z-index: -1;
+  top: 0rem;
 }
 .introduction-hero {
   width: 100vw;
@@ -18,9 +20,10 @@
 .introduction-card-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
   margin: auto;
-  padding-top: 5rem;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
 }
 .introduction-card {
   height: auto;
@@ -29,8 +32,8 @@
   border-radius: 1rem;
 }
 .introduction-card img {
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   margin: auto;
   display: block;
   margin-top: 2rem;
@@ -41,10 +44,51 @@
   margin-top: 3rem;
 }
 .introduction-card button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   background-color: transparent;
   color: black;
   float: initial;
-  padding: 5rem 0 3rem 0;
+  margin: 5rem auto 3rem auto;
+  padding-right: 1rem;
+}
+
+.read-more-details {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  top: 105%;
+  width: 85%;
+  padding: 2rem;
+}
+.active .read-more-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.read-more-details div {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.read-more-details img {
+  display: none;
+}
+.read-more-details:nth-child(3) img {
+  display: block !important;
+  width: 50%;
+  object-fit: contain;
+}
+.read-more-arrow {
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #2f2f2f;
+  transform: rotate(180deg);
+  pointer-events: none;
+}
+.active .read-more-arrow {
+  transform: rotate(0deg);
 }
