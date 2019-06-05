@@ -24,13 +24,7 @@
     "icon": "images/icons/why.svg",
     "title": "Why us?",
     "firstElement": [
-      "Huge restaurant close to the buildings.",
-      "Personal make up artist.",
-      "Great traditional food.",
-      "We are offering the opportunity to participate different activities.",
-      "We are living in the middle of the mountains.",
-      "Good prices.",
-      "Great services we offer"
+      "Huge restaurant close to the buildings. <br>Personal make up artist. <br>Great traditional food. <br>We are offering the opportunity to participate different activities. <br>We are living in the middle of the mountains.<br>Good prices. <br>Great services we offer"
     ],
     "secondElement": "",
     "imgDetails": ""

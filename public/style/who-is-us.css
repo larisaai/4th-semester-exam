@@ -65,7 +65,7 @@
   width: 85%;
   padding: 2rem;
   left: 5rem;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border-bottom: 0.2rem solid #b2a289;
 }
@@ -114,4 +114,7 @@
 }
 .active .read-more-arrow {
   transform: rotate(0deg);
+}
+.read-more-details:last-child {
+  font-size: 1.2rem;
 }
