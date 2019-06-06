@@ -4,6 +4,7 @@
 @import "table.css";
 @import "who-is-us.css";
 @import "reviews.css";
+@import "gallery.css";
 @import "footer.css";
 body {
   margin: 0;
@@ -60,7 +61,7 @@ button {
   width: 5rem !important;
   height: 0.3rem;
   background-color: #b2a289;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .right-text {
   width: 25rem;
