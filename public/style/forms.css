@@ -159,7 +159,7 @@ h2.heading {
 .controls button:hover + label,
 .controls select:focus + label,
 .controls select:hover + label {
-  color: #bdcc00;
+  color: #101f3e;
   cursor: text;
 }
 .controls .fa-sort {

@@ -179,3 +179,41 @@ button {
   font-size: 1.5rem;
   margin-bottom: 0;
 }
+
+@media only screen and (max-width: 1024px) {
+  .hero-title h1 {
+    font-size: 2.5rem;
+  }
+  .right-text h2,
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .slider img {
+    height: 50vh;
+  }
+  .right-text {
+    top: 20rem;
+  }
+  .introduction-card {
+    width: 13rem;
+  }
+  .read-more-details div {
+    width: 50%;
+  }
+  .introduction-card h3 {
+    font-size: 1.2rem;
+  }
+  .overview-item {
+    margin: 2rem 0;
+  }
+  .overview-item .divider {
+    margin-bottom: 0;
+  }
+  .overview-item h3 {
+    margin: 0.7rem 0;
+  }
+}
