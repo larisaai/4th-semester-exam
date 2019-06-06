@@ -71,3 +71,26 @@ fetch("/data")
     });
   })
   .catch(err => console.log(err));
+const cardContainer = document.querySelector(".card-container");
+
+fetch("/services")
+  .then(res => res.json())
+  .then(data => {
+    data = JSON.parse(data);
+    data.forEach(item => {
+      const servicesCard = document.createElement("div");
+      servicesCard.className = "services-card";
+      const h3 = document.createElement("h3");
+      const serviceImg = document.createElement("img");
+      const p = document.createElement("p");
+
+      h3.innerHTML = item.title;
+      serviceImg.src = item.icon;
+      p.innerHTML = item.text;
+      servicesCard.appendChild(serviceImg);
+      servicesCard.appendChild(h3);
+      servicesCard.appendChild(p);
+      cardContainer.appendChild(servicesCard);
+    });
+  })
+  .catch(err => console.log(err));
