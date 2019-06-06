@@ -7,28 +7,59 @@
   background-color: #101f3e;
   max-width: 100%;
 }
+.footer-col {
+  width: 33%;
+  text-align: center;
+}
+.footer-col:last-child {
+  padding-left: 2rem;
+}
 .footer h3 {
   font-size: 1.7rem;
+  color: white;
+}
+.footer .contact a {
+  color: white;
+  font-size: 1.1rem;
+  text-align: left;
+  margin-left: 1rem;
 }
 footer p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  color: white;
 }
 .so-me {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
+
 .footer img {
+  width: 2rem;
+  height: 2rem;
+}
+.so-me img {
+  margin: 2rem 1rem;
   width: 3rem;
   height: 3rem;
 }
-.so-me button {
-  color: #101f3e;
+.footer .logo-footer {
+  width: 10rem;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.footer button {
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 1.5rem;
+  float: initial;
+  color: #101f3e;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 .contact div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 0.5rem;
 }
