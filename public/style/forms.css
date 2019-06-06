@@ -1,12 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+.form-container {
+  display: flex;
+  justify-content: space-evenly;
 }
-
+.reviews-container {
+  position: relative;
+  width: 50%;
+}
+.message {
+  position: relative;
+  width: 50%;
+}
 ol,
 ul {
   list-style: none;
@@ -75,7 +78,7 @@ a {
 }
 
 form {
-  padding: 4em 10%;
+  padding: 2rem 3rem;
 }
 
 .form-group {
