@@ -1,3 +1,6 @@
+.prices-container {
+  margin-top: 5rem !important;
+}
 .responstable {
   margin: 1em 0;
   width: 100%;
@@ -5,7 +8,6 @@
   background: #fff;
   color: #024457;
   border: 1px solid #101f3e;
-  margin-top: 10rem;
   border-radius: 1rem;
   margin-bottom: 4rem;
   font-size: 1.1rem;

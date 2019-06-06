@@ -11,15 +11,15 @@
   align-items: flex-start;
 }
 .services-card {
-  width: 18rem;
+  width: 15rem;
   height: auto;
-  min-height: 22rem;
+  min-height: 20rem;
   background-color: rgba(255, 255, 255, 0.8);
-  margin: 1rem;
+  margin: 0.5rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 2rem 1rem;
 }
 .services-card img {
@@ -30,10 +30,11 @@
 .services-card h3 {
   text-align: center;
   margin: 1rem;
+  font-size: 1.2rem;
 }
 .services-card p {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -43,6 +44,6 @@
 }
 .card-background img {
   object-fit: cover;
-  height: 62rem;
+  height: 55rem;
   width: 100%;
 }
