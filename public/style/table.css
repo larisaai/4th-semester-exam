@@ -5,6 +5,8 @@
   background: #fff;
   color: #024457;
   border: 1px solid #101f3e;
+  margin-top: 10rem;
+  border-radius: 1rem;
 }
 .responstable tr {
   border: 1px solid #d9e4e6;
@@ -59,6 +61,7 @@
 .responstable td {
   text-align: left;
   margin: 0.5em 1em;
+  text-align: center;
 }
 @media (min-width: 480px) {
   .responstable th,
