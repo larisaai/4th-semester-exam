@@ -19,7 +19,7 @@ fetch("/who")
       buttonDetails.addEventListener("click", function(event) {
         const card = document.querySelector(".introduction-card.active");
         const currentCard = event.target.parentNode;
-        console.log(currentCard.classList.contains("active"));
+
         if (currentCard.classList.contains("active")) {
           currentCard.classList.remove("active");
         } else {

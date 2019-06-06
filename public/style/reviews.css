@@ -54,3 +54,8 @@
 .reviews::-webkit-scrollbar-thumb:hover {
   opacity: 1;
 }
+
+.review-container {
+  position: relative;
+  width: 45%;
+}

@@ -65,7 +65,16 @@ app.post("/reviews", (req, res) => {
 });
 
 app.post("/guestData", (req, res) => {
-  const { name, email, phone, country, arrive, depart, comments } = req.body;
+  const {
+    name,
+    email,
+    phone,
+    country,
+    arrive,
+    depart,
+    people,
+    comments
+  } = req.body;
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -93,6 +102,7 @@ app.post("/guestData", (req, res) => {
     Country: ${country}
     Arrive date: ${arrive}
     Departure: ${depart}
+    People: ${people}
     Comments: ${comments}`
   };
 

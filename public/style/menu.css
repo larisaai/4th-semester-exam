@@ -69,3 +69,6 @@
 }
 .dropdown-menu a li:hover {
 }
+.menu-item.active .dropdown-menu {
+  display: block;
+}
