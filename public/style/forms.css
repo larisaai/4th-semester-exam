@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-evenly;
 }
-.reviews-container {
+/* .reviews {
   position: relative;
   width: 50%;
-}
+} */
 .message {
   position: relative;
   width: 50%;

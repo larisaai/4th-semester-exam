@@ -61,6 +61,7 @@ button {
   position: absolute;
   top: 1rem;
   left: 4rem;
+  width: 12rem;
 }
 .hero-title h1 {
   font-size: 4rem;
@@ -121,7 +122,7 @@ button {
 }
 .overview-item button {
   float: initial;
-  color: #101f3e;
+  color: white;
   background-color: #b2a289;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;

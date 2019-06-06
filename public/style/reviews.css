@@ -1,17 +1,21 @@
 .reviews-container .box-wide {
   padding-top: 3rem;
 }
+.reviews-container {
+  position: relative;
+  width: 100%;
+}
 .reviews {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 2rem;
   overflow-x: scroll;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .reviews div {
   height: auto;
-  width: 15rem;
+  width: 17rem;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 1rem;
   padding: 1.5rem;
