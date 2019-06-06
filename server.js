@@ -23,6 +23,16 @@ app.get("/data", (req, res) => {
   });
 });
 
+app.get("/services", (req, res) => {
+  fs.readFile("database/services.json", "utf8", (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.status(200).json(data);
+    }
+  });
+});
+
 app.get("/who", (req, res) => {
   fs.readFile("database/who.json", "utf8", (err, data) => {
     if (err) {
