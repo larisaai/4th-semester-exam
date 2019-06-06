@@ -55,13 +55,17 @@
   background-color: #101f3e;
   top: 4rem;
   right: 0;
+  margin-top: 0;
+  padding-left: 0;
 }
 .dropdown-menu a {
   text-decoration: none;
   color: white;
+  white-space: nowrap;
 }
 .dropdown-menu a li {
   padding: 2rem;
+  font-size: 1.2rem;
 }
 .dropdown-menu a li:hover {
 }
