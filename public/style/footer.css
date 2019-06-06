@@ -5,6 +5,7 @@
   height: 20rem;
   width: 100vw;
   background-color: #101f3e;
+  max-width: 100%;
 }
 .footer h3 {
   font-size: 1.7rem;
