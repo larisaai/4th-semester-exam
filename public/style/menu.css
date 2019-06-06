@@ -17,6 +17,9 @@
   margin-top: 15px;
   color: white;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 .menu-item-header:hover {
 }
@@ -46,13 +49,14 @@
   border-left: 5px solid transparent;
   position: relative;
   top: 10px;
+  pointer-events: none;
 }
 .dropdown-menu {
   position: absolute;
   z-index: 2;
   display: none;
   min-width: 160px;
-  background-color: #101f3e;
+  background-color: rgba(16, 31, 62, 0.9);
   top: 4rem;
   right: 0;
   margin-top: 0;
@@ -67,8 +71,7 @@
   padding: 2rem;
   font-size: 1.2rem;
 }
-.dropdown-menu a li:hover {
-}
+
 .menu-item.active .dropdown-menu {
   display: block;
 }

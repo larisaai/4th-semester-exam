@@ -13,6 +13,15 @@ body {
 header {
   background-color: rgba(16, 31, 62, 0.9);
 }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Droid Serif";
+}
+a {
+  font-family: "Oswald Light";
+}
 h2 {
   color: white;
   font-size: 2rem;
@@ -69,7 +78,7 @@ button {
   width: 4.8rem;
 }
 .hero-title h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   width: 20rem;
   color: white;
 }
@@ -83,14 +92,15 @@ button {
   width: 25rem;
   position: absolute;
   right: 4rem;
-  top: 20rem;
+  top: 15rem;
 }
 .right-text h2 {
   border-top: 0.2rem solid #b2a289;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   text-align: center;
   padding-top: 1rem;
+  font-style: italic;
 }
 .buttons-contaner {
   display: flex;
@@ -110,7 +120,7 @@ button {
 
 .overview-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: 2rem;
 }
