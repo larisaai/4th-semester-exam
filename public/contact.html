@@ -21,7 +21,7 @@
                 <a href="index.html" class="menu-item-header">Home</a>
                 <button class="menu-item-btn"><span class="btn-arrow"></span></button>
                 <ul class="dropdown-menu">
-                  <a href="index.html#who"><li>Who are weS?</li></a>
+                  <a href="index.html#who"><li>Who are we?</li></a>
                   <a href="index.html#what-offer"><li>What do we offer?</li></a>
                   <a href="index.html#reviews"><li>Reviews</li></a>
                   <a href="index.html#video"><li>Video presentation</li></a>
@@ -36,7 +36,6 @@
                   <a href="gallery.html#restaurant"><li>Restaurant</li></a>
             <a href="gallery.html#actvities"><li>Activities</li></a>
                   <a href="gallery.html#tradition"><li>Tradition</li></a>
-                  <a href="gallery.html#area"><li>Area</li></a>
     
                 </ul>
               </div>
@@ -53,63 +52,51 @@
               </div>
               <div class="menu-item">
           <a href="contact.html" class="menu-item-header">Contact us</a>
-          <button class="menu-item-btn"><span class="btn-arrow"></span></button>
-                <ul class="dropdown-menu">
-                  <a href="contact.html#touch"><li>Get in touch</li></a>
-                  <a href="contact.html#leave-review"><li>Leave a review</li></a>
                 </ul>
               </div>
            
             </div>
           </div>
         </header>
-        <div class="hero-container">
-        <div class="slider">
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <img src="images/pictures/slideshow09.png" style="width:100%" />
-            </div>
-    
-            <div class="mySlides fade">
-              <img src="images/pictures/room05.jpg.png" style="width:100%" />
-            </div>
-    
-            <div class="mySlides fade">
-              <img src="images/pictures/saloon03.jpg" style="width:100%" />
-            </div>
-          </div>
-        </div>
-    
-          <div class="overlay"></div>
-          <div class="hero-content box-wide">
-            <img class="logo" src="images/pictures/logo.png">
-            <div class="hero-title">
-              <div class="divider"></div>
-              <h1>Passion for tradition</h1>
-            </div>
-            <div class="right-text"> 
-              <div class="buttons-contaner">
-              <button>Book now</button> 
-            </div>
-             
-              <h2>We are waiting for you in Bucovina, to our guesthouse in the town Malini.</h2>
-            </div>
-          </div>
-        </div>
-
-
+        
+  <div class= "form-container">
     <div class="reviews-container">
-      <form action="/reviews" method="POST">
-        <input type="text" placeholder="Name" name="name" /> <br />
-        <input type="email" placeholder="Email" name="email" /> <br />
-        <textarea name="guestReview" cols="30" rows="10"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-
+        <form action="/reviews" method="POST">
+          <div class="form-group">
+            <h2 class="heading">Leave us a review</h2>
+            <div class="controls">
+              <input type="text" id="name" class="floatLabel" name="name"  />
+              <label for="name">Name</label>
+            </div>
+            <div class="controls">
+              <input type="text" id="email" class="floatLabel" name="email" />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="grid">
+              <p class="info-text">
+                Your review
+              </p>
+              <br />
+              <div class="controls">
+                <textarea
+                  name="guestReview"
+                  class="floatLabel"
+                  id="message"
+                ></textarea>
+                <label for="guestReview">Review</label>
+              </div>
+              <button type="submit" value="Submit" class="col-1-4 form-button">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+  
     <div class="message">
       <form action="/message" method="POST">
-        <!--  General -->
         <div class="form-group">
           <h2 class="heading">Leave us a message</h2>
           <div class="controls">
@@ -143,7 +130,8 @@
         </div>
         <!-- /.form-group -->
       </form>
-
+    </div>
+  </div>
 
       <footer class="footer">
           <div class="footer-col">
@@ -176,7 +164,7 @@
      
           </div>
         </footer>
-    </div>
+  
     <script src="js/booking.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/slideshow.js"></script>
