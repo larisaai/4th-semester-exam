@@ -25,6 +25,15 @@ button {
 .box-wide {
   width: 90%;
   margin: auto;
+  max-width: 120rem;
+}
+.align-left {
+  float: right;
+  text-align: left;
+}
+.align-left .divider {
+  float: right;
+  margin-top: 1rem;
 }
 .black {
   color: black;
