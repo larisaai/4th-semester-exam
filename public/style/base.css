@@ -69,7 +69,7 @@ button {
   width: 4.8rem;
 }
 .hero-title h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   width: 20rem;
   color: white;
 }
@@ -103,7 +103,7 @@ button {
   background-color: #b2a289;
   border-radius: 0.5rem;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /* overview gallery */
