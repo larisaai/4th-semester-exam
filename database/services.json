@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Rooms",
+    "icon": "images/pictures/rooms.svg",
+    "text": "A building with 4 apartments and 6 matrimonial rooms;<br>A building with 1 apartment and 7 matrimonial rooms;<br>A building with 4 matrimonial rooms;"
+  },
+  {
+    "title": "Restaurant",
+    "icon": "images/pictures/restaurant.svg",
+    "text": "A traditional restaurant with a separeum that we called the Peasant House where you will wanna to move;"
+  },
+  {
+    "title": "Saloon",
+    "icon": "images/pictures/saloon.svg",
+    "text": "A modern, saloon with terrace and floor where we can organize your dream wedding;"
+  },
+  {
+    "title": "Court",
+    "icon": "images/pictures/court.svg",
+    "text": "A football field / tennis court, with nocturnal, to burn calories;"
+  },
+  {
+    "title": "Bathtub",
+    "icon": "images/pictures/bathtub.svg",
+    "text": "An outdoor bathtub with hot water, which can be used in winter by brave people;"
+  },
+  {
+    "title": "Pond",
+    "icon": "images/pictures/lake.svg",
+    "text": "A pond as an oasis of tranquility where you can fish;"
+  },
+  {
+    "title": "Shepfold",
+    "icon": "images/pictures/sheep.svg",
+    "text": "A tourist sheepfold where prepare cheese;"
+  },
+  {
+    "title": "Makeup",
+    "icon": "images/pictures/makeup.svg",
+    "text": "Makeup artist ready to help if needed"
+  }
+]
