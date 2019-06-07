@@ -16,7 +16,9 @@ header {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p,
+li {
   font-family: "Droid Serif";
 }
 a {
@@ -31,7 +33,9 @@ h3 {
 }
 button {
   border: none;
+  font-family: "Oswald Light";
 }
+
 .box-wide {
   width: 90%;
   margin: auto;
@@ -64,7 +68,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 85vh;
+  height: 40rem;
 }
 .logo {
   position: absolute;
@@ -181,6 +185,9 @@ button {
 }
 
 @media only screen and (max-width: 1024px) {
+  .extra-margin {
+    margin-top: 10rem !important;
+  }
   .hero-title h1 {
     font-size: 2.5rem;
   }
@@ -191,9 +198,11 @@ button {
   h3 {
     font-size: 1.4rem;
   }
-
+  .menu-item {
+    margin-left: 1.5rem;
+  }
   .slider img {
-    height: 50vh;
+    height: 45rem;
   }
   .right-text {
     top: 20rem;
@@ -224,13 +233,13 @@ button {
     width: 14rem;
   }
   .overlay {
-    height: 50vh;
+    height: 45rem;
   }
   .card-background img {
     height: 75rem;
   }
   .form-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .review-container,
   .message {
@@ -245,8 +254,11 @@ button {
   }
 }
 @media only screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
   .right-text {
-    top: 15rem;
+    top: 18rem;
     width: 20rem;
   }
   .right-text h2 {
@@ -260,17 +272,43 @@ button {
     height: 5rem;
   }
   .menu {
-    flex-direction: column;
+    /* flex-direction: column;
     justify-content: flex-start;
     z-index: 2;
     height: auto;
     position: absolute;
     width: 50%;
     background-color: #101f3e;
-    right: 0;
+    right: 0; */
   }
   .menu-item {
     display: block;
+    width: 10rem;
+    height: auto;
+  }
+  .menu-item:last-child {
+    padding-top: 1rem;
+  }
+  .menu-item-btn {
+    top: -2rem;
+    right: -2rem;
+  }
+  .menu-item-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 2;
+    height: auto;
+    position: fixed;
+    width: 60%;
+    background-color: #101f3e;
+    right: -60%;
+    top: 5rem;
+    height: 100%;
+  }
+
+  .open .menu-item-container {
+    right: 0;
+    padding-top: 3rem;
   }
 
   .active .dropdown-menu {
@@ -279,11 +317,248 @@ button {
   }
   .dropdown-menu a li {
     text-align: left;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
   }
-  .menu-item:first-child {
-    padding-top: 5rem;
-  }
+
   .burger-menu {
     display: block;
+    right: 3rem;
+    top: 0.5rem;
+  }
+  .introduction-card {
+    width: 10rem;
+  }
+  .introduction-card img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .introduction-card h3 {
+    font-size: 1rem;
+  }
+  .read-more-btn {
+    font-size: 0.9rem;
+  }
+  .read-more-details {
+    left: 4rem;
+  }
+  #what-offer {
+    margin-top: 13rem;
+  }
+  .overview-item {
+    height: 18rem;
+  }
+  .footer {
+    height: auto;
+    flex-direction: column-reverse;
+    padding: 2rem 0;
+  }
+  .contact div {
+    margin-left: 0;
+  }
+  .footer .logo-footer {
+    width: 7rem;
+  }
+  .footer-col:last-child {
+    padding-left: 1rem;
+  }
+
+  /* gallery */
+  .gallery-item {
+    min-width: 45%;
+  }
+  .food-container .gallery-item,
+  .activities-container .gallery-item,
+  .tradition-container .gallery-item {
+    min-width: 50%;
+  }
+
+  /* service page */
+  .services-card {
+    width: 13rem;
+  }
+
+  /* booking page */
+  .a {
+    margin-bottom: 0rem;
+  }
+  .a h3 {
+    font-size: 1.3rem;
+  }
+  .slider img {
+    height: 40rem;
+  }
+  .overlay {
+    height: 40rem;
+  }
+  .box-wide {
+    width: 90%;
+  }
+  .small-logo {
+    left: 5rem;
+    top: -0.5rem;
+  }
+  .small-logo img {
+    width: 5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .menu-item-container {
+    width: 100%;
+    right: -100%;
+  }
+  .open .menu-item-container {
+    right: 0%;
+  }
+
+  .hero-title {
+    top: 10rem;
+    left: 2rem;
+  }
+  .hero-title h1 {
+    font-size: 2rem;
+  }
+  .right-text {
+    top: 20rem;
+    left: 2rem;
+  }
+  .right-text h2 {
+    font-size: 1.2rem;
+  }
+  .buttons-contaner button {
+    font-size: 0.8rem;
+  }
+  .introduction-card-container {
+    flex-wrap: wrap;
+  }
+  .introduction-card {
+    margin-bottom: 1rem;
+    position: relative;
+    width: 9.5rem;
+  }
+  .introduction-hero {
+    height: 45rem;
+  }
+  .read-more-details {
+    width: 20rem;
+    flex-direction: column;
+    font-size: 1rem;
+    left: 0rem;
+    z-index: 2;
+  }
+  .read-more-details div {
+    width: 100%;
+  }
+  .read-more-details:nth-child(2n) {
+    left: -10rem;
+  }
+  #what-offer {
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .overview-item {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 0.5rem;
+  }
+  .overview-item img {
+    width: 100%;
+  }
+  .overview-item div {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+  .overview-item li {
+    font-size: 1rem;
+  }
+  .overview-item button {
+    font-size: 0.8rem;
+  }
+  .overview-item:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+  .reviews h3 {
+    font-size: 1rem;
+  }
+  .reviews p {
+    font-size: 0.9rem;
+  }
+  .footer-col {
+    width: 61%;
+  }
+  .footer h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .footer .contact {
+    font-size: 1rem;
+  }
+  .footer button {
+    font-size: 0.9rem;
+  }
+  .gallery-item {
+    min-width: 90%;
+  }
+
+  .activities-container ul {
+    flex-wrap: wrap;
+  }
+  .activities-container ul li {
+    font-size: 1rem;
+  }
+  .gallery-container p {
+    font-size: 1rem;
+  }
+  .align-left .divider {
+    margin-top: 0;
+  }
+  .services-card {
+    width: 20rem;
+    height: auto;
+    min-height: 10rem;
+  }
+  .card-background img {
+    height: 125rem;
+  }
+  .services-card h3 {
+    font-size: 1rem;
+  }
+  .services-card img {
+    height: 4rem;
+    width: 4rem;
+  }
+  .services-card p {
+    font-size: 0.9rem;
+  }
+  .services-section h2 {
+    font-size: 1.4rem;
+  }
+  .a h3 {
+    font-size: 1rem;
+  }
+  form {
+    padding: 2rem 1rem;
+  }
+  h2.heading {
+    font-size: 1rem;
+  }
+  .small-logo {
+    left: 2rem;
+    top: 0;
+  }
+  .small-logo img {
+    width: 4rem;
+  }
+  .overlay {
+    height: 35rem;
+  }
+
+  .slider img {
+    height: 35rem;
   }
 }

@@ -24,5 +24,4 @@ burger.addEventListener("click", function() {
   } else {
     parent.classList.add("open");
   }
-  // nav.className = !nav.classList.contains("active") ? "active" : "";
 });

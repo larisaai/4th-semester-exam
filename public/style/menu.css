@@ -11,6 +11,12 @@
   height: 100%;
   display: flex;
 }
+.menu-item-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
 
 .menu-item-header {
   font-size: 1.3rem;
@@ -58,7 +64,7 @@
   display: none;
   min-width: 160px;
   background-color: rgba(16, 31, 62, 0.9);
-  top: 4rem;
+  top: 100%;
   right: 0;
   margin-top: 0;
   padding-left: 0;
