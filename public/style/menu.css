@@ -38,6 +38,7 @@
   margin-left: -10px;
   position: relative;
   background-color: transparent;
+  top: 0.2rem;
 }
 .menu-item-btn:hover {
 }

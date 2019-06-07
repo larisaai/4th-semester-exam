@@ -11,12 +11,12 @@
 }
 .introduction-hero {
   width: 100vw;
-  height: 35rem;
+  height: 37rem;
   object-fit: cover;
   max-width: 100%;
 }
 .introduction-hero-container .overlay {
-  height: 35rem;
+  height: 37rem;
 }
 .introduction-card-container {
   display: flex;
