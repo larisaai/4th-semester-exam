@@ -11,6 +11,7 @@
   height: 100%;
   display: flex;
 }
+
 .menu-item-header {
   font-size: 1.3rem;
   padding: 6px 14px;
@@ -70,8 +71,38 @@
 .dropdown-menu a li {
   padding: 2rem;
   font-size: 1.2rem;
+  text-align: right;
 }
 
 .menu-item.active .dropdown-menu {
   display: block;
+}
+@media only screen and (max-width: 768px) {
+  .burger-menu {
+    display: none;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    right: 5rem;
+  }
+  .burger-menu-item {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    opacity: 1;
+    display: block;
+    color: white;
+  }
+  .open .burger-menu-item:first-child {
+    transform: rotate(-45deg) translate(-7px, 7px);
+  }
+  .open .burger-menu-item:nth-child(2) {
+    opacity: 0;
+  }
+  .open .burger-menu-item:last-child {
+    transform: rotate(45deg) translate(-7px, -7px);
+  }
 }
